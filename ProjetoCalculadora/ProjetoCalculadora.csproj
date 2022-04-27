@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{124A8506-DB55-44A8-BB9A-0392C32CEDA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoCalculadora</RootNamespace>
+    <AssemblyName>ProjetoCalculadora</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelCalculadora.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-addition-plus-and-minus-signs-computer-icons-awesome-miscellaneous-cross-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-addition-plus-and-minus-signs-computer-icons-awesome-miscellaneous-cross-sign %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2664.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-plus-and-minus-signs-computer-icons-plus-minus-sig-minus-5ae773a9e87774.5465678115251178659522.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-plus-and-minus-signs-meno-subtraction-mathematics-5b096e58c82dc1.54500362152734472882.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-line-font-minus-sign-line-minus-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-multiplication-sign-clip-art-symbol-mathematics-wrong-svg-png-icon-free-download-4-424-onlin-5b92b5360134f5.025274501536341302005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-basic-math-multiplication-sign-mathematics-clip-ar-through-the-cross-svg-png-icon-free-download-326-5b657234dc5860.9324711715333750289025.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3740.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-obelus-division-symbol-sign-computer-icons-divide-5ade4788561249.3837670715245167443526.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-obelus-division-symbol-mathematics-sign-dividing-line-miscellaneous-angle-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-symbol-division-mathematics-obelus-computer-icons-divide-5ade47895fec22.4989581415245167453929.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-symbol-division-mathematics-obelus-computer-icons-divide-miscellaneous-black-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43097.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43743.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-mathematical-notation-mathematics-symbol-subscript-and-superscript-sign-mathematics-angle-text-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratis-png-notacion-matematica-simbolo-matematico-subindice-y-superindice-signo-matematica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32176.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outrun_wallpaper__10_-2017-01-25-0516.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
